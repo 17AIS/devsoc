@@ -1,0 +1,40 @@
+<!--https://www.kirupa.com/animations/rotating_items_around_a_point.htm-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Meow Meow Meow</title>
+        <style>
+            #ting {animation: spin 2.5s infinite linear;}
+            @keyframes spin {
+            100% {transform-origin: center; transform: rotate(360deg);}
+            }
+        </style>
+    </head>
+
+    <body style="background-color:rgb(255, 255, 255);">
+
+        <h1 style="text-align: center;"> Choose your path</h1>
+        <input type="text" id="something" placeholder="something here">
+
+       
+        <button style="text-align: center;" id="ting">
+            <img src= "yinyang.png" width="8" height="8">
+        </button>
+
+        <button id="windowButton">Open new tab</button>
+        <pre id="log"></pre>
+
+        
+
+        <div style="text-align: center;" id="ting">
+            <img src= "yinyang.png" width="800" height="800">
+        </div>
+
+        <button id="signButton">Check star sign</button>
+        <pre id="log"></pre>
+        
+
+
+        <script src="front.js"></script>
+    </body>
+</html>
