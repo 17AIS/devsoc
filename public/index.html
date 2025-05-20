@@ -1,4 +1,6 @@
 <!--https://www.kirupa.com/animations/rotating_items_around_a_point.htm-->
+<!--inspired by Manuel Pinto https://codepen.io/P1N2O/pen/pyBNzX for the "alive" gradient background -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,17 +10,61 @@
             @keyframes spin {
             100% {transform-origin: center; transform: rotate(360deg);}
             }
+            
+            body {
+            background: linear-gradient(-45deg, #ffffff,#000000);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
         </style>
     </head>
 
-    <body style="background-color:rgb(255, 255, 255);">
+    <body id="body">
 
-        <h1 style="text-align: center;"> Choose your path</h1>
+        <h1 id="header" style="text-align: center;"> Choose your path</h1>
+
+        <marquee height="16" style="font-size:5;color:black" direction="right" scrollamount="42">
+            "Dwelling on the negative simply contributes to its power." — Shirley MacLaine
+        </marquee>  
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="25">                                 
+            "Act as if what you do makes a difference. It does." — William James      
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="45">                                 
+            "If you attach to the negative behaviour of others it brings you down to their level." — Guru Singh
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="35" scrolldelay="1">                                       
+            "All our dreams can come true if we have the courage to pursue them." — Walt Disney   
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="40">                                    
+            "All progress takes place outside the comfort zone." — Michael John Bobak
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="right" scrollamount="45">
+            "Negativity is the enemy of creativity." — David Lynch         
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="20">                             
+            "Do what you can with all you have, wherever you are." — Theodore Roosevelt      
+        </marquee> 
+        
+        
         <input type="text" id="something" placeholder="something here">
+        
 
-       
-        <button style="text-align: center;" id="ting">
-            <img src= "yinyang.png" width="8" height="8">
+       <h3 id="wrong" style="font-size: 100px;text-align:center;"></h3>
+        <button style="text-align: center;" id="ting" onclick="stuff()">
+            <img src= "yinyangred.png" width="8" height="8">
         </button>
 
         <button id="windowButton">Open new tab</button>
@@ -26,14 +72,34 @@
 
         
 
-        <div style="text-align: center;" id="ting">
-            <img src= "yinyang.png" width="800" height="800">
+        <div style="text-align: center;border-radius: 50%;" id="ting">
+            <img id="yingyang" onclick="stuff()" src= "yinyang.png" width="800" height="800">
         </div>
+
+        <marquee height="16" style="font-size:5;color:black" direction="right" scrollamount="42">
+            "Dwelling on the negative simply contributes to its power." — Shirley MacLaine
+        </marquee>  
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="25">                                 
+            "Act as if what you do makes a difference. It does." — William James      
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="45">                                 
+            "If you attach to the negative behaviour of others it brings you down to their level." — Guru Singh
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="35" scrolldelay="1">                                       
+            "All our dreams can come true if we have the courage to pursue them." — Walt Disney   
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="40">                                    
+            "All progress takes place outside the comfort zone." — Michael John Bobak
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="right" scrollamount="45">
+            "Negativity is the enemy of creativity." — David Lynch         
+        </marquee>
+        <marquee height="16" style="font-size:5;color:black" direction="left" scrollamount="20">                             
+            "Do what you can with all you have, wherever you are." — Theodore Roosevelt      
+        </marquee> 
 
         <button id="signButton">Check star sign</button>
         <pre id="log"></pre>
-        
-
 
         <script src="front.js"></script>
     </body>
