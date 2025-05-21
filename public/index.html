@@ -8,13 +8,28 @@
         <style>
 
         .persistent {
-            position: sticky;
-            top: 200px;
-            padding-left: 500px;
-            background-color: rgb(32, 165, 20);
+            position: fixed;
+            top: 0;
+            width:30px;
+            height:50px;
+            margin: 10px;
+            left: 500px;
             color: white;
-            width: 50px;
-            padding: 10px;
+            padding-left: 60px;
+            text-align: 200px;
+            background-color: black;
+            
+        }
+
+        .yin {
+            position: fixed;
+            top: 05px;
+            width:30px;
+            height:50px;
+            margin: 10px;
+            left: 525px;
+            color: white;
+            
         }
             #ting {animation: spin 2.5s infinite linear;}
             @keyframes spin {
@@ -45,7 +60,7 @@
     <body id="body">
 
         <h1 class="persistent">
-            <p>test</p>
+            <p class="yin">yin</p>
         </h1>
 
         <h1 id="header" style="text-align: center;"> Choose your path</h1>
@@ -77,7 +92,7 @@
         
 
        <h3 id="wrong" style="font-size: 100px;text-align:center;"></h3>
-        <button style="text-align: center;" id="ting" onclick="stuff()">
+        <button style="text-align: center;background-color: aqua;" id="ting" onclick="stuff()">
             <img src= "yinyangred.png" width="8" height="8">
         </button>
 
