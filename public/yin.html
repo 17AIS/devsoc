@@ -2,86 +2,67 @@
 <head>
     <title>Personal Information</title>
     <style>
-        #brr  {animation: left 0.5s 3 linear;}
-        #test {animation-name: left;
-                animation-duration: 2s;
-                animation-iteration-count: 3;}
-        @keyframes left {
-            from {
-                translate: 2000px 0;
-                scale: 100% 1;
-            }
-            to {
-                translate: -400px 0;
-                scale: 100% 1;
-            }
+
+        .fade {
+        color: black;
+        text-align: center;
+        animation: fade-in 1.5s 1 linear;}
+
+        .main { 
+            border: thick double #32a1ce; 
+            width: 500px;
+            text-align: center;
+            margin:0% auto;
+            animation: fade-in 1.5s 1 linear;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
         }
 
-        
-    </style>
-    <body style="background-color: rgb(132, 255, 255);">
-        <div id="brr" > 
-            <p1 style="font-size: 50px;position: fixed"; >my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 36px;position: fixed;top: 10px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 48px;position: fixed;top: 30px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 64px;position: fixed;top: 50px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 90px;position: fixed;top: 70px;">my name is jeff</p1>
-        </div>
-        <div id="brr"> 
-            <p1 style="font-size: 50px;position: fixed;top: 90px;" >my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 46px;position: fixed;top: 110px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 48px;position: fixed;top: 130px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 64px;position: fixed;top: 150px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 92px;position: fixed;top: 170px;">my name is jeff</p1>
-        </div>
-        <div id="brr"> 
-            <p1 style="font-size: 50px;position: fixed;top: 190px;" >my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 36px;position: fixed;top: 210px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 48px;position: fixed;top: 230px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 50px;position: fixed;top: 250px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 38px;position: fixed;top: 270px;">my name is jeff</p1>
-        </div>
-        <div id="brr"> 
-            <p1 style="font-size: 50px;position: fixed;top: 290px;" >my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 36px;position: fixed;top: 310px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 50px;position: fixed;top: 330px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 72px;position: fixed;top: 350px;">my name is jeff</p1>
-        </div>
-        <div id="brr">
-            <p1 style="font-size: 70px;position: fixed;top: 370px;" >my name is jeff</p1>
-        </div>
+        .scroll {
+            animation: scrollUp 2s 1 linear ease-in;
+            animation-delay: 1.5s;
+        }
 
-        <img src="sleep.gif" style="width:400px;height:400px">
+        @keyframes scrollUp {
+            from {transform:translateY(500%);}
+            to {transform:translateY(0%);}
+        }
+
+        @keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                25% {
+                    opacity: 0.25;
+                }
+                50% {
+                    opacity: 0.5;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        @keyframes up {
+            
+        }
+    </style>
+    <body style="background-color: antiquewhite;">
+        <h1 class="fade">About me</h1>
+
+        <h2 style="opacity: 0; height: 50px;"></h2>
+        <h1 class="scroll"> AASDKFASHDFKHDSFHASD</h1>
+        <div class="main">
+            sdhkjlsadkglhgshjgsl <br>
+            asfg <br>
+            sadf<br>
+            asdf<br>
+            sadf<br>
+            asdf<br>
+            asdf<br>
+        </div>
+        <img src="sleep.gif" style="width:110px;height:80px">
+
         <div id="test">
             something
         </div>
