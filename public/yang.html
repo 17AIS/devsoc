@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        
+        .fade {
+        color: blueviolet;
+        text-align: center;
+        animation: fade-in 1.5s 1 linear;}
+
+        .main { 
+            border: thick double blueviolet; 
+            width: 500px;
+            text-align: center;
+            margin:0% auto;
+            animation: fade-in 1.5s 1 linear;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+
+        @keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                25% {
+                    opacity: 0.25;
+                }
+                50% {
+                    opacity: 0.5;
+                }
+                100% {
+                    opacity: 1;
+                }
+        }
+    </style>
+
+    <body style="background-color: rgb(69, 69, 61);">
+        <title>About me (Not)</title>
+        <h1 style="text-align: center;"><p class="fade">NOT</p>About Me</h1>
+
+        <div class="main">ow<br>ow<br><br><br><br><br><br><br><br><br><br><br><br></div>
+        <img src="flying.gif">
+    </body>
+</head>

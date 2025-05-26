@@ -17,6 +17,21 @@
             padding-left: 60px;
             text-align: 200px;
             background-color: black;
+            z-index: 9998;
+            
+        }
+        .persistent2 {
+            position: fixed;
+            top: 0;
+            width:30px;
+            height:50px;
+            margin: 10px;
+            left: 715px;
+            color: black;
+            padding-left: 60px;
+            text-align: 200px;
+            background-color: white;
+            z-index: 9998;
             
         }
 
@@ -28,8 +43,22 @@
             margin: 10px;
             left: 525px;
             color: white;
+            z-index: 9999;
             
         }
+
+        .yang {
+            position: fixed;
+            top: 05px;
+            width:30px;
+            height:50px;
+            margin: 10px;
+            left: 725px;
+            color: black;
+            z-index: 9999;
+            
+        }
+
             #ting {animation: spin 2.5s infinite linear;}
             @keyframes spin {
             100% {transform-origin: center; transform: rotate(360deg);}
@@ -58,8 +87,12 @@
 
     <body id="body">
 
-        <h1 class="persistent">
+        <h1 class="persistent" href="yin.html">
             <p class="yin"><a href="yin.html" style="text-decoration: none;color: white;">yin</a></p>
+        </h1>
+
+        <h1 class="persistent2" href="yang.html">
+            <p class="yang"><a href="yang.html" style="text-decoration: none;color: black;">yang</a></p>
         </h1>
 
 
