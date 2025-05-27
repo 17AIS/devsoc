@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <head>
     <style>
+        .main { 
+            border: thick double rgb(126, 236, 126); 
+            width: 650px;
+            text-align: center;
+            margin:0% auto;
+            animation: fade-in 0.5s 1 linear;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
 
+        @keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                25% {
+                    opacity: 0.25;
+                }
+                50% {
+                    opacity: 0.5;
+                }
+                100% {
+                    opacity: 1;
+                }
+        }
     </style>
 
-    <body>
+    <body style="background-image: url(./sceneary.gif);">
         <title>does this count as opposites attract???</title>
-        <h1 style="text-align: center;">Opposites attract</h1>
+        <h1 style="text-align: center;background-color: white;">Opposites attract</h1>
+
+        
+        <h1 class="main" style="text-align: left; background-color: whitesmoke;" > 
+            Hopefully this adhere's to the theme of opposites attract,<br>
+            while there is no truth to my lies page (aside from the frontend part)<br>
+            maybe one day, I'll have the qualifications written on the page where I lied. <br>
+            Though, a PhD does sounds very dreadful... <br>
+        </h1>
+        <h1 style="height: 100px;"></h1>
+        
         <img src="walking.gif">
         <img src="walking2.gif" style="width: 200px;height: 245px;" >
     </body>
